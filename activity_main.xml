@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f5ff">
+
+    <!-- 점수 텍스트 -->
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#4a148c" />
+
+    <!-- 플레이어 캐릭터 -->
+    <ImageView
+        android:id="@+id/player_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/player_character" /> <!-- player_character는 drawable 폴더의 이미지 리소스 -->
+
+    <!-- 시작 버튼 -->
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:layout_below="@id/score_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#7b1fa2"
+        android:textColor="#ffffff" />
+
+    <!-- 이동 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp">
+
+        <Button
+            android:id="@+id/left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"
+            android:backgroundTint="#7b1fa2"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/down_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Down"
+            android:backgroundTint="#7b1fa2"
+            android:textColor="#ffffff"
+            android:layout_marginStart="20dp" />
+
+        <Button
+            android:id="@+id/up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Up"
+            android:backgroundTint="#7b1fa2"
+            android:textColor="#ffffff"
+            android:layout_marginStart="20dp" />
+
+        <Button
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:backgroundTint="#7b1fa2"
+            android:textColor="#ffffff"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+</RelativeLayout>
